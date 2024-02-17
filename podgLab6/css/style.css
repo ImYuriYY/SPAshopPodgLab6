@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: plum;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-menu {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#headerLogo {
+    width: 60px;
+    height: 60px;
+    background-image: url('../img/skins-from-badili-icon.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header-buttons-list {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.header-button {
+    background-color: transparent;
+    padding: 20px 40px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.header-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+#main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    min-height: 800px;
+}
+#main form {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+#main form p:not([id="errorsText"]), input {
+    font-size: 18px;
+}
+#headerLogo {
+    cursor: pointer;
+}
+#main form input {
+    padding-left: 10px;
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #1a1a1a;
+    border-radius: 3px;
+}
+#main form button {
+    width: 200px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 20px;
+}
+#main form button:hover {
+    border-bottom: 1px solid #1a1a1a;
+}
+
+#main form #errorsText {
+    font-size: 14px;
+    color: brown;
+}
+
+#productsList {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+#product {
+    width: 45%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(220, 220, 220);
+    border: 1px solid #1a1a1a;
+    border-radius: 5px;
+}
+#productTitle {
+    font-size: 25px;
+}
+#productDesc {
+    font-size: 18px;
+    text-align: center;
+}
+#productPrice {
+    color: green;
+    font-size: 20px;
+}
+#addInCartButton, #deleteProduct {
+    width: 60%;
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+#addInCartButton:hover, #deleteProduct:hover {
+    border-bottom: 1px solid black;
+}
+
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: plum;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
